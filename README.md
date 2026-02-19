@@ -88,34 +88,27 @@ APIS_PYTHON_U2/
 
 ## 📸 Capturas de Pantalla
 
-> Coloca las imágenes de cada ejercicio dentro de la carpeta `screenshots/` y actualiza las rutas a continuación.
-
-### 1.1 Sistema de Clima
-![Sistema de Clima](screenshots/clima.png)
 
 ### 1.2 Buscador de Lugares
-![Buscador de Lugares](screenshots/lugares.png)
+![Buscador de Lugares](screenshots/API-LUGARES.png)
 
 ### 2.1 Analizador de Reddit
-![Analizador de Reddit](screenshots/reddit.png)
+![Analizador de Reddit](screenshots/API-REDDIT.png)
 
 ### 2.2 Dashboard de GitHub
-![Dashboard de GitHub](screenshots/github.png)
+![Dashboard de GitHub](screenshots/API-GITHUB.png)
 
 ### 3.1 API REST con SQLite
-![API REST con SQLite](screenshots/productos.png)
+![API REST con SQLite](screenshots/API-PRODUCTOS.png)
 
 ### 3.2 Chat con Firebase
-![Chat con Firebase](screenshots/chat.png)
-
-### 4.1 Buscador de Libros
-![Buscador de Libros](screenshots/libros.png)
+![Chat con Firebase](screenshots/API-FIREBASE.png)
 
 ### 4.2 Conversor de Divisas
-![Conversor de Divisas](screenshots/divisas.png)
+![Conversor de Divisas](screenshots/API-DIVISAS.png)
 
 ### 5.1 Buscador de Películas
-![Buscador de Películas](screenshots/peliculas.png)
+![Buscador de Películas](screenshots/API-PELICULAS.png)
 
 ### 5.2 Buscador de Música
-![Buscador de Música](screenshots/spotify.png)
+![Buscador de Música](screenshots/API-SPOTIFY.png)
