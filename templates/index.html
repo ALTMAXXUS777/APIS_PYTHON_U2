@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Página Principal — Todas las Apps</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: white;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.7;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            padding: 30px 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+            backdrop-filter: blur(8px);
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            background: rgba(255, 255, 255, 0.13);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .card .emoji {
+            font-size: 3em;
+            margin-bottom: 14px;
+        }
+
+        .card h2 {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.9em;
+            opacity: 0.65;
+            line-height: 1.5;
+            flex-grow: 1;
+            margin-bottom: 22px;
+        }
+
+        .card a {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #e94560, #0f3460);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.95em;
+            letter-spacing: 0.5px;
+            transition: opacity 0.2s, transform 0.1s;
+        }
+
+        .card a:hover {
+            opacity: 0.85;
+        }
+
+        .card a:active {
+            transform: scale(0.97);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            opacity: 0.4;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🚀 Mis Aplicaciones Python</h1>
+        <p>Selecciona una aplicación para abrirla</p>
+    </header>
+
+    <div class="grid">
+
+        <div class="card">
+            <div class="emoji">🌤</div>
+            <h2>Clima</h2>
+            <p>Consulta el clima de tu ubicación actual usando OpenWeatherMap.</p>
+            <a href="/clima">Abrir App</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🎬</div>
+            <h2>Películas &amp; Series</h2>
+            <p>Busca películas y series en cartelera con TMDB API.</p>
+            <a href="/peliculas">Abrir App</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">💰</div>
+            <h2>Divisas</h2>
+            <p>Convierte monedas en tiempo real con ExchangeRate-API.</p>
+            <a href="/divisas">Abrir App</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🐙</div>
+            <h2>GitHub</h2>
+            <p>Explora perfiles de usuarios y repositorios de GitHub.</p>
+            <a href="/github">Abrir App</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">📚</div>
+            <h2>Libros</h2>
+            <p>Busca libros y obtén detalles con Google Books API.</p>
+            <a href="/libros">Abrir App</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">📍</div>
+            <h2>Lugares</h2>
+            <p>Encuentra restaurantes, hospitales y más lugares cercanos.</p>
+            <a href="/lugares">Abrir App</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🤖</div>
+            <h2>Reddit</h2>
+            <p>Explora publicaciones y subreddits de Reddit.</p>
+            <a href="/reddit">Abrir App</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🎵</div>
+            <h2>Spotify</h2>
+            <p>Busca canciones, artistas y álbumes con Spotify Web API.</p>
+            <a href="/spotify">Abrir App</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">💬</div>
+            <h2>Chat</h2>
+            <p>Chat en tiempo real almacenado en Firebase Realtime Database.</p>
+            <a href="/chat">Abrir App</a>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🛍️</div>
+            <h2>Productos</h2>
+            <p>API REST completa de gestión de productos con SQLite.</p>
+            <a href="/productos">Abrir App</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Ejecuta <code>python main_app.py</code> para iniciar todas las aplicaciones</p>
+    </footer>
+
+</body>
+</html>
